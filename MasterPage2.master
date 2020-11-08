@@ -1,0 +1,101 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage2.master.cs" Inherits="MasterPage2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+        }
+        .style4
+        {
+            width: 100%;
+            height: 33px;
+        }
+        .style5
+        {
+            height: 32px;
+        }
+        .style8
+        {
+            height: 32px;
+            width: 136px;
+        }
+        .style9
+        {
+            height: 32px;
+            width: 66px;
+        }
+        .style10
+        {
+            height: 32px;
+            width: 207px;
+        }
+        .style11
+        {
+            height: 32px;
+            width: 218px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div align="center" 
+        
+        
+        
+        style="height: 118px; font-family: Calibri; font-size: xx-large; background-color: #003366; color: #FFFFFF;">
+    
+       <h2 style="height: 36px; margin-top: 0px;">
+           
+           ONLINE EXAMINATION SYSTEM<br />
+           <br />
+        </h2>
+        <table class="style4" >
+               <tr>
+                   <td class="style9">
+                       &nbsp;</td>
+                   <td class="style10">
+                       <asp:HyperLink ID="HyperLink1" runat="server" Font-Size="X-Large" 
+                           Font-Bold="True" ForeColor="White" NavigateUrl="~/Login.aspx">Login</asp:HyperLink>
+                   </td>
+                   <td class="style11">
+                       <asp:HyperLink ID="HyperLink2" runat="server" Font-Size="X-Large" 
+                           Font-Bold="True" ForeColor="White" NavigateUrl="~/Registration.aspx">Registration</asp:HyperLink>
+                   </td>
+                   <td class="style8">
+                       &nbsp;</td>
+                   <td class="style5">
+                       &nbsp;</td>
+                   <td class="style5">
+                       &nbsp;</td>
+                   <td class="style5">
+                       &nbsp;</td>
+                   <td class="style5">
+                   </td>
+               </tr>
+           </table>
+    </div>
+    <div >
+        <table style="width:100%; height: 248px;">
+            <tr>
+                <td class="style1">
+                    <br />
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div style="font-family: Calibri; font-size: medium; color: #FFFFFF; background-color: #003399;">
+    <h6>
+    euphoria 
+    </h6>
+    </div>
+    </form>
+</body>
+</html>
